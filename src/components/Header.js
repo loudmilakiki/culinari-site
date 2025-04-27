@@ -5,58 +5,84 @@ function Header() {
   return (
     <header className="header">
       <nav className="nav-header">
-        <ul className="component-header">
-          <div className="content">
-            <img className="image" src="../img/logo.png" alt="logo"/>
-            <img className="img" src="../../img/home.svg" alt="Головна" />
+        <div className="content">
+         
+            <Link to="/">
+              <img className="image" src="../img/logo.png" alt="logo" />
+            </Link>
+      
+
+          <ul className="recipe-menu">
             <li className="recipe-header">
+              <img className="img" src="../img/home.svg" alt="Головна" />
               <Link to="/" className="text-header">
                 Головна
               </Link>
             </li>
 
-            {/* <img className="img" src="../../img/salad.svg" alt="Салати" />
             <li className="recipe-header">
-              <Link to="/recipes/salads">Салати</Link>
-            </li> */}
+              <img className="img" src="../img/salad.svg" alt="Салати" />
+              <Link to="/recipes/salads" className="text-header">
+                Салати
+              </Link>
+            </li>
 
-            {/* <img className="img" src="../../img/food.svg" alt="Соуси" />
             <li className="recipe-header">
-              <Link to="/recipes/souce">Соуси</Link>
-            </li> */}
-          </div>
-          <div className="content">
-            {/* <img className="img" src="../../img/bread.svg" alt="Випічка" />
-            <li className="recipe-header">
-              <Link to="/recipes/baking">Випічка</Link>
-            </li> */}
-{/* 
-            <img className="img" src="../../img/cupcake.svg" alt="Десерти" />
-            <li className="recipe-header">
-              <Link to="/recipes/dessert">Десерти</Link>
-            </li> */}
+              <img className="img" src="../img/food.svg" alt="Соуси" />
+              <Link to="/recipes/souce" className="text-header">
+                Соуси
+              </Link>
+            </li>
 
-            {/* <img className="img" src="../../img/meat.svg" alt="М'ясо" />
             <li className="recipe-header">
-              <Link to="/recipes/meat">М'ясо</Link>
-            </li> */}
+              <img className="img" src="../../img/bread.svg" alt="Випічка" />
+              <Link to="/recipes/baking" className="text-header">
+                Випічка
+              </Link>
+            </li>
 
-            {/* <img className="img" src="../../img/fish.svg" alt="Риба" />
             <li className="recipe-header">
-              <Link to="/recipes/fish">Риба</Link>
-            </li> */}
+              <img className="img" src="../../img/cupcake.svg" alt="Десерти" />
+              <Link to="/recipes/dessert" className="text-header">
+                Десерти
+              </Link>
+            </li>
 
-            {/* <img className="img" src="../../img/bowl.svg" alt="Супи" />
             <li className="recipe-header">
-              <Link to="/recipes/soup">Супи</Link>
-            </li> */}
+              <img className="img" src="../../img/meat.svg" alt="М'ясо" />
+              <Link to="/recipes/meat" className="text-header">
+                М'ясо
+              </Link>
+            </li>
 
-            {/* <img className="img" src="../../img/jams.svg" alt="Маринади" />
             <li className="recipe-header">
-              <Link to="/recipes/marinades">Маринади</Link>
-            </li> */}
-          </div>
-        </ul>
+              <img className="img" src="../../img/fish.svg" alt="Риба" />
+              <Link to="/recipes/fish" className="text-header">
+                Риба
+              </Link>
+            </li>
+
+            <li className="recipe-header">
+              <img className="img" src="../../img/bowl.svg" alt="Супи" />
+              <Link to="/recipes/soup" className="text-header">
+                Супи
+              </Link>
+            </li>
+
+            <li className="recipe-header">
+              <img className="img" src="../../img/jams.svg" alt="Маринади" />
+              <Link to="/recipes/marinades" className="text-header">
+                Маринади
+              </Link>
+            </li>
+          </ul>
+
+          <button className="header__burger menu-btn-open" type="button">
+            <svg width="24" height="24">
+              <use href="./images/menuburger.svg"></use>
+            </svg>
+          </button>
+        </div>
       </nav>
     </header>
   );
